@@ -24,4 +24,7 @@ app.post('/lists', function (req, res) {
   res.json(list)
 })
 
-app.listen(8080)
+app.listen(process.env.npm_package_config_port, function () {
+  const { address, family, port } = this.address()
+  console.log('-- server started on http://[%s]:%s (%s)', address, port, family)
+})

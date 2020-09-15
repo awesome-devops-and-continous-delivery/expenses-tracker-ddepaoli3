@@ -4,8 +4,12 @@
   "description": "Expenses Tracker Backend Application",
   "main": "index.js",
   "private": true,
+  "config": {
+    "port": 8080
+  },
   "scripts": {
     "start": "node index.js",
+    "node": "node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
