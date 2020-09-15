@@ -12,18 +12,30 @@
     </select>
     <input id="new-list-name" type="text" placeholder="list name">
     <button id="new-list-button">save</button>
+    <pre id="list-details-json"></pre>
   </section>
   <script>
-    const baseUrl = 'https://private-0b242-expensestracker.apiary-mock.com'
-    let dropdown = document.getElementById('expense-lists')
-    let newListButton = document.getElementById('new-list-button')
-    let newListName = document.getElementById('new-list-name')
+    // const baseUrl = 'https://private-0b242-expensestracker.apiary-mock.com'
+    // const baseUrl = 'http://localhost:8080'
+    const baseUrl = ''
+    const dropdown = document.getElementById('expense-lists')
+    const newListButton = document.getElementById('new-list-button')
+    const newListName = document.getElementById('new-list-name')
+    const listDetailsJson = document.getElementById('list-details-json')
 
     fetchLists()
 
     newListButton.addEventListener('click', function (event) {
       createList(newListName.value)
         .then(_ => fetchLists())
+    })
+
+    dropdown.addEventListener('change', function (event) {
+      fetch(baseUrl + event.target.value)
+        .then(response => response.json())
+        .then(data => {
+          listDetailsJson.innerText = JSON.stringify(data)
+        })
     })
 
     function fetchLists () {
@@ -33,7 +45,7 @@
         .then(data => {
           dropdown.length = 0
           for (let i = 0; i < data.length; i++){
-            let option = createOption(data[i].name, data[i].name)
+            let option = createOption(data[i].name, data[i].id)
             dropdown.add(option)
           }
         })
@@ -59,7 +71,7 @@
       let option = document.createElement('option')
 
       option.text = text
-      option.value = value
+      option.value = '/lists/' + value
 
       return option
     }
