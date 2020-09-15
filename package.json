@@ -4,6 +4,9 @@
   "description": "Expenses Tracker Backend Application",
   "main": "index.js",
   "private": true,
+  "config": {
+    "port": 8080
+  },
   "scripts": {
     "start": "node index.js",
     "node": "node",
