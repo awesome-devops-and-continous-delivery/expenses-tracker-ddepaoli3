@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    <select id="expense-lists">
+      <option>Loading options</option>
+    </select>
+    <input id="new-list-name" type="text" placeholder="list name">
+    <button id="new-list-button">save</button>
+  </section>
+  <script>
+    const baseUrl = 'https://private-0b242-expensestracker.apiary-mock.com'
+    let dropdown = document.getElementById('expense-lists')
+    let newListButton = document.getElementById('new-list-button')
+    let newListName = document.getElementById('new-list-name')
+
+    fetchLists()
+
+    newListButton.addEventListener('click', function (event) {
+      createList(newListName.value)
+        .then(_ => fetchLists())
+    })
+
+    function fetchLists () {
+      // GET
+      fetch(baseUrl + '/lists')
+        .then(response => response.json())
+        .then(data => {
+          dropdown.length = 0
+          for (let i = 0; i < data.length; i++){
+            let option = createOption(data[i].name, data[i].name)
+            dropdown.add(option)
+          }
+        })
+        .catch(console.error)
+
+    }
+
+    function createList (name) {
+      return fetch(baseUrl + '/lists', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name })
+      })
+      .then(response => response.json())
+      .then(console.log)
+      .catch(console.error)
+
+    }
+
+    function createOption (text, value) {
+      let option = document.createElement('option')
+
+      option.text = text
+      option.value = value
+
+      return option
+    }
+  </script>
+</body>
+</html>
