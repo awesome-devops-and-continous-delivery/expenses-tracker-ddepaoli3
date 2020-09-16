@@ -1,6 +1,6 @@
 # Espenses Tracker
 
-### Apiary API Documentation
+### Apiary API
 https://expensestracker.docs.apiary.io/
 
 ### Installation
