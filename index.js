@@ -1,11 +1,25 @@
 const express = require('express')
+const fs = require('fs')
 const parser = require('body-parser')
 
 const app = express()
   .use(parser.json())
   .use(express.static('web'))
 
-const lists = []
+let lists
+
+try {
+  const backup = fs.readFileSync('data.json')
+  lists = JSON.parse(backup)
+} catch (e) {
+  lists = []
+}
+
+process.on('SIGINT', function () {
+  fs.writeFileSync('data.json', JSON.stringify(lists))
+  console.log('-- saving data in memory to data.json file')
+  process.exit()
+})
 
 app.get('/lists', function (req, res) {
   res.json(lists)
