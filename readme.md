@@ -22,3 +22,21 @@ If you want to start the application on a port different from 8080 (which is the
 ```sh
 npm start --expenses-tracker:port=8888
 ```
+
+
+### How to build the docker image
+
+```sh
+docker build --rm --tag expenses-tracker /path/to/project
+```
+
+
+### How to run the docker image
+
+```sh
+docker run -p 8088:8080 -it expenses-tracker # shows the logs direcly in the terminal
+
+
+docker run -p 8088:8080 -d expenses-tracker # should return the container_id
+docker logs -f {container_id}
+```
