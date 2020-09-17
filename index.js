@@ -55,6 +55,16 @@ app.post('/lists/:list_id/expenses', function (req, res) {
   res.json(expense)
 })
 
+app.get('/export', function (req, res) {
+  res.setHeader('Content-disposition', 'attachment; filename=export.json')
+  res.json(lists)
+})
+
+app.post('/import', function (req, res) {
+  lists = req.body
+  res.end()
+})
+
 app.listen(process.env.npm_package_config_port, function () {
   const { address, family, port } = this.address()
   console.log('-- server started on http://[%s]:%s (%s)', address, port, family)
