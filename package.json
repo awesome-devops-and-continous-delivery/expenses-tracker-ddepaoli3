@@ -11,9 +11,7 @@
     "start": "node index.js",
     "node": "node",
     "docker": "docker run -v $PWD/data.json:/usr/src/data.json:rw -p 8088:80 -it expenses-tracker",
-    "docker:windows": "docker run -v ./data.json:/usr/src/data.json:rw -p 8088:80 -it expenses-tracker",
     "docker:build": "docker build --rm --tag expenses-tracker $PWD",
-    "docker:build:windows": "docker build --rm --tag expenses-tracker .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
