@@ -34,9 +34,9 @@ docker build --rm --tag expenses-tracker /path/to/project
 ### How to run the docker image
 
 ```sh
-docker run -p 8088:8080 -it expenses-tracker # shows the logs direcly in the terminal
+docker run -p 8088:80 -it expenses-tracker # shows the logs direcly in the terminal
 
 
-docker run -p 8088:8080 -d expenses-tracker # should return the container_id
+docker run -p 8088:80 -d expenses-tracker # should return the container_id
 docker logs -f {container_id}
 ```

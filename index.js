@@ -17,7 +17,7 @@ try {
 
 process.on('SIGINT', function () {
   fs.writeFileSync('data.json', JSON.stringify(lists))
-  console.log('-- saving data in memory to data.json file')
+  console.log('* saving data in memory to data.json file')
   process.exit()
 })
 
@@ -67,5 +67,5 @@ app.post('/import', function (req, res) {
 
 app.listen(process.env.npm_package_config_port, function () {
   const { address, family, port } = this.address()
-  console.log('-- server started on http://[%s]:%s (%s)', address, port, family)
+  console.log('* server started on http://[%s]:%s (%s)', address, port, family)
 })
