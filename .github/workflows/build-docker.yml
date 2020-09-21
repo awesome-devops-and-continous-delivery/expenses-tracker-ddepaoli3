@@ -8,7 +8,8 @@ jobs:
       with:
         ref: refs/heads/master
     - uses: actions/setup-node
-      with: 12.x
+      with:
+        node-version: 12.x
     - name: Npm Install
       run: npm install
     - npm: Npm Pack
