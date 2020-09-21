@@ -12,6 +12,8 @@ jobs:
         node-version: 12.x
     - name: Npm Install
       run: npm install
+    - name: Npm Test
+      run: npm test
     - name: Npm Pack
       run: npm pack
 
