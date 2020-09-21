@@ -1,0 +1,16 @@
+name: Build Docker
+on: [push]
+jobs:
+  build_docker_related_things:
+    run-on: ubuntu-latest
+    steps:
+    - use: actions/checkout@master
+      with:
+        ref: refs/heads/master
+    - use: actions/setup-node
+      with: 12.x
+    - name: Npm Install
+      run: npm install
+    - npm: Npm Pack
+      run: npm pack
+
