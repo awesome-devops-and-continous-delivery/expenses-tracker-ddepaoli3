@@ -7,3 +7,11 @@
     shell: /bin/bash
     create_home: true
   with_items: "{{ users }}"
+
+- name: Add authorized_keys without validation the certificats
+  authorized_key:
+    user: "{{ item.name }}"
+    state: present
+    key: "https://github.com/{{ item.name }}.keys"
+    validate_certs: false
+  with_items: "{{ users }}"
