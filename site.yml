@@ -11,6 +11,9 @@
       - name: Mabo92
         comment: Matteo Borghese
         password: $5$bzawctDlTvfayx/h$L.HaDO76pjcElkm6DWTQ4j5MugaR1jCNIJGSfa3b7UB/
+      - name: matsabella
+        comment: Matteo Sabella
+        password: $5$YQxRUPMYmLk.voxM$fvu5v9.qTavj/Czp8f361xfaTjDgM79j7B6bklRB/4.
   roles:
     - role: users
     - role: docker
