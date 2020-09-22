@@ -5,6 +5,9 @@
       - name: ivoputzer
         comment: Ivo von Putzer Reibegg
         password: $5$KqWKJgk5WYqNrmaO$ArzJP8s15WI5TtTQ1hNtL6v6V0AmvG6Bb9PgRAHPis/
+      - name: venturoBIP
+        comment: Bonaventura Cappelletti
+        password: $6$ADmDOhDpW$gsYQuiKPpV1ewaUpRq2VGAvrcocffLQ8XGF94e6LNLZfKIjy6Ku.cZoR/5exeCi1ESjPB9TRM6HxCiY5BCNCV0
   roles:
     - role: users
     - role: docker
