@@ -17,6 +17,9 @@
       - name: mattiaborrelli
         comment: Mattia Borrelli
         password: $5$zSpqPVEqCA7ylpa0$hh8ltDC9z8bZgFnMZmQpWE29PXIzwXPLnEO4uGm5DI0
+      - name: giammo9
+        comment: giammarcosommaini
+        password: $5$Wjy.STtVng4iQjo0$e.tuvEqYzsiyEvf3M6RM2DrCjtwB2nkp2x4G4KROhQ9
   roles:
     - role: users
     - role: docker
