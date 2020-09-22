@@ -26,7 +26,7 @@ jobs:
     - name: Build docker image
       run: docker build --tag ${GITHUB_REPOSITORY#*/} ${PWD}
     - name: Docker save image
-      run: docker save -o {GITHUB_SHA}.tar ${GITHUB_REPOSITORY#*/}
+      run: docker save -o ${GITHUB_SHA}.tar ${GITHUB_REPOSITORY#*/}
     - name: List files
       run: ls -lsah
     - name: Ansible Deploy
