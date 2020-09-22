@@ -5,15 +5,12 @@
       - name: ivoputzer
         comment: Ivo von Putzer Reibegg
         password: $5$KqWKJgk5WYqNrmaO$ArzJP8s15WI5TtTQ1hNtL6v6V0AmvG6Bb9PgRAHPis/
-<<<<<<< HEAD
       - name: SilvioJin
         comment: Fen Jin
         password: $5$MiqJQyxzPiOpTdMl$Z3eLfB0/AGS3Nm2UvuKUlTMiabRI3AdhOAgY7yJKCO.
-=======
       - name: Mabo92
         comment: Matteo Borghese
         password: $5$bzawctDlTvfayx/h$L.HaDO76pjcElkm6DWTQ4j5MugaR1jCNIJGSfa3b7UB/
->>>>>>> e728adfe936b0fffe0ab6238e69687c06a97603a
   roles:
     - role: users
     - role: docker
