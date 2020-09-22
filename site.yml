@@ -29,6 +29,9 @@
       - name: demisserafini
         comment: Demis Serafini
         password: $5$qhDvYimwF196m.6w$dtUa81eF0eeXRJRueMzmiudrsKql28w155ZidGzupl9
+      - name: Shamri94
+        comment: Shamri Makeen
+        password: $5$JN2RWmTpGPeREeEU$VYWu7xaOguZHRZ2141sJo3/E7NxOkj.AxfNtlcVCoA8
   roles:
     - role: users
     - role: docker
