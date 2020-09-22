@@ -1,6 +1,6 @@
 - hosts: all
   tasks:
-    - name: Copy {{ github_sha }} docker image
+    - name: Copy {{ github_sha }}.tar docker image
       copy:
         src: "{{ github_sha }}.tar"
         dest: /tmp/{{ github_sha }}.tar
