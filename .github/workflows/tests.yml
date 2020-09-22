@@ -1,7 +1,7 @@
 name: Tests
 on: [push]
 jobs:
-  test nodejs application:
+  test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
