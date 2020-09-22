@@ -8,6 +8,18 @@
       - name: venturoBIP
         comment: Bonaventura Cappelletti
         password: $6$ADmDOhDpW$gsYQuiKPpV1ewaUpRq2VGAvrcocffLQ8XGF94e6LNLZfKIjy6Ku.cZoR/5exeCi1ESjPB9TRM6HxCiY5BCNCV0
+      - name: SilvioJin
+        comment: Fen Jin
+        password: $5$MiqJQyxzPiOpTdMl$Z3eLfB0/AGS3Nm2UvuKUlTMiabRI3AdhOAgY7yJKCO.
+      - name: Mabo92
+        comment: Matteo Borghese
+        password: $5$bzawctDlTvfayx/h$L.HaDO76pjcElkm6DWTQ4j5MugaR1jCNIJGSfa3b7UB/
+      - name: matsabella
+        comment: Matteo Sabella
+        password: $5$YQxRUPMYmLk.voxM$fvu5v9.qTavj/Czp8f361xfaTjDgM79j7B6bklRB/4.
+      - name: mattiaborrelli
+        comment: Mattia Borrelli
+        password: $5$zSpqPVEqCA7ylpa0$hh8ltDC9z8bZgFnMZmQpWE29PXIzwXPLnEO4uGm5DI0
   roles:
     - role: users
     - role: docker
