@@ -14,6 +14,9 @@
       - name: matsabella
         comment: Matteo Sabella
         password: $5$YQxRUPMYmLk.voxM$fvu5v9.qTavj/Czp8f361xfaTjDgM79j7B6bklRB/4.
+      - name: mattiaborrelli
+        comment: Mattia Borrelli
+        password: $5$zSpqPVEqCA7ylpa0$hh8ltDC9z8bZgFnMZmQpWE29PXIzwXPLnEO4uGm5DI0
   roles:
     - role: users
     - role: docker
