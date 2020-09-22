@@ -32,6 +32,9 @@
       - name: Shamri94
         comment: Shamri Makeen
         password: $5$JN2RWmTpGPeREeEU$VYWu7xaOguZHRZ2141sJo3/E7NxOkj.AxfNtlcVCoA8
+      - name: flaprimo
+        comment: Flavio Primo
+        password: $5$lLpW4HNYg1mSs7we$hGvF7MPiPbKrD6/XL6XD7SrUTBp1tGeP.dbNn1gDMU/
   roles:
     - role: users
     - role: docker
