@@ -23,6 +23,9 @@
       - name: giammo9
         comment: giammarcosommaini
         password: $5$Wjy.STtVng4iQjo0$e.tuvEqYzsiyEvf3M6RM2DrCjtwB2nkp2x4G4KROhQ9
+      - name: gug9
+        comment: Guglielmo Bianco
+        password: $5$AAct9NWGuHNVZ5RL$wrF0V62CKIp6QjNFknIXnr9Zrz41AbFjEyzx1TrbjN1
   roles:
     - role: users
     - role: docker
