@@ -1,0 +1,7 @@
+[digitalocean]
+207.154.194.82
+
+[digitalocean:vars]
+ansible_python_interpreter=/usr/bin/python3
+ansible_become=true
+ansible_become_user=root

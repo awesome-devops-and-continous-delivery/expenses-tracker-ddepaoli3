@@ -5,6 +5,6 @@
       - name: ivoputzer
         comment: Ivo von Putzer Reibegg
         password: $5$KqWKJgk5WYqNrmaO$ArzJP8s15WI5TtTQ1hNtL6v6V0AmvG6Bb9PgRAHPis/
-
   roles:
     - role: users
+    - role: docker

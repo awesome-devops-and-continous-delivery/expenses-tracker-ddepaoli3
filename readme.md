@@ -40,3 +40,7 @@ docker run -p 8088:80 -it expenses-tracker # shows the logs direcly in the term
 docker run -p 8088:80 -d expenses-tracker # should return the container_id
 docker logs -f {container_id}
 ```
+
+
+### How to provision the production server
+ansible-playbook -i env/digitalocean site.yml --extra-vars="ansible_user=root ansible_password={password} ansible_ssh_common_args='-o PreferredAuthentications=password'"
