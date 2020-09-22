@@ -1,0 +1,9 @@
+- name: Adds users with admin privileges
+  user:
+    name: "{{ item.name }}"
+    comment: "{{ item.comment }}"
+    password: "{{ item.password }}"
+    group: "sudo"
+    shell: /bin/bash
+    create_home: true
+  with_items: "{{ users }}"

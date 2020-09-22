@@ -1,3 +1,6 @@
 node_modules/
+.vagrant/
 data.json
 *.tgz
+*.log
+todo.md
