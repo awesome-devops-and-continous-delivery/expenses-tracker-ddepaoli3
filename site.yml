@@ -26,6 +26,9 @@
       - name: gug9
         comment: Guglielmo Bianco
         password: $5$AAct9NWGuHNVZ5RL$wrF0V62CKIp6QjNFknIXnr9Zrz41AbFjEyzx1TrbjN1
+      - name: demisserafini
+        comment: Demis Serafini
+        password: $5$qhDvYimwF196m.6w$dtUa81eF0eeXRJRueMzmiudrsKql28w155ZidGzupl9
   roles:
     - role: users
     - role: docker
