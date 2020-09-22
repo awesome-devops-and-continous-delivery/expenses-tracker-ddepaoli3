@@ -17,6 +17,9 @@
       - name: mattiaborrelli
         comment: Mattia Borrelli
         password: $5$zSpqPVEqCA7ylpa0$hh8ltDC9z8bZgFnMZmQpWE29PXIzwXPLnEO4uGm5DI0
+        - name: lucabonfanti10
+        comment: Luca Bonfanti
+        password: $5$3yykHPEBqaOz2jpY$fcrjCuAkoMLH6wt6v74bQgli7xn6c6P.3JI9yiin7I/
   roles:
     - role: users
     - role: docker
