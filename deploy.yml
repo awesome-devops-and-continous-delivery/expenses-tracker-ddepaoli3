@@ -22,5 +22,6 @@
         restart_policy: unless-stopped
         purge_networks: true
         networks_cli_compatible: no
+        network_mode: host
         ports:
           - "0.0.0.0:80:80"
