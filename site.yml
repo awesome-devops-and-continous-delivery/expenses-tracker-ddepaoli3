@@ -20,6 +20,9 @@
         - name: lucabonfanti10
         comment: Luca Bonfanti
         password: $5$3yykHPEBqaOz2jpY$fcrjCuAkoMLH6wt6v74bQgli7xn6c6P.3JI9yiin7I/
+      - name: giammo9
+        comment: giammarcosommaini
+        password: $5$Wjy.STtVng4iQjo0$e.tuvEqYzsiyEvf3M6RM2DrCjtwB2nkp2x4G4KROhQ9
   roles:
     - role: users
     - role: docker
