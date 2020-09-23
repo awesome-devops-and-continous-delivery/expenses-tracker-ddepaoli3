@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("ddepaoli3/expenses-tracker-ddepaoli3:")
+        app = docker.build("ddepaoli3/expenses-tracker-ddepaoli3")
     }
 
     stage('Test image') {
