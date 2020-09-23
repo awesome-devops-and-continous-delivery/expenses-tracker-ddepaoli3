@@ -18,8 +18,8 @@ node {
         /* Ideally, we would run a test framework against our image.
          * For this example, we're using a Volkswagen-type approach ;-) */
 
-        app.inside {
-            sh 'npm test'
+        steps {
+            sh "npm test"
         }
     }
 
