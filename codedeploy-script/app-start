@@ -1,4 +1,5 @@
 #!/bin/bash
 
 cd /home/ubuntu/expenses-tracker
+sudo chown -R ubuntu:ubuntu /home/ubuntu/expenses-tracker
 forever start -c index.js
