@@ -1,14 +1,14 @@
 version: 0.0
 os: linux
 files:
-- source: /
-  destination: /home/ubuntu/expenses-tracker
+  - source: /
+    destination: /home/ubuntu/expenses-tracker
 
 permissions:
-- object: /
-   pattern: "**"
-   owner: ubuntu
-   group: ubuntu
+  - object: /home/ubuntu/expenses-tracker
+    pattern: "**"
+    owner: ubuntu
+    group: ubuntu
 
 hooks:
 ApplicationStop:
