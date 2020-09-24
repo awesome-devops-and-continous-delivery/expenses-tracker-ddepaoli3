@@ -9,6 +9,9 @@ permissions:
     pattern: "**"
     owner: ubuntu
     group: ubuntu
+  - object: /home/ubuntu/expenses-tracker
+    owner: ubuntu
+    group: ubuntu
 
 hooks:
 ApplicationStop:

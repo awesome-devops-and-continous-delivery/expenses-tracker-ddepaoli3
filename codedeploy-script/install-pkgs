@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd /home/ubuntu/expenses-tracker
-node install
+npm install
