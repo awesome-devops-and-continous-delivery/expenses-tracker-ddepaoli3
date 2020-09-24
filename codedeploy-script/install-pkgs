@@ -1,4 +1,5 @@
 #!/bin/bash
 
+sudo chown -R ubuntu:ubuntu /home/ubuntu/expenses-tracker
 cd /home/ubuntu/expenses-tracker
 sudo npm install

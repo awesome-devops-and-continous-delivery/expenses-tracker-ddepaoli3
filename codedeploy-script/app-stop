@@ -1,5 +1,4 @@
 #!/bin/bash
 
-sudo forever stopall
-sudo cp -R /tmp/expenses-tracker /home/ubuntu/
 sudo chown -R ubuntu:ubuntu /home/ubuntu/expenses-tracker
+sudo forever stopall
