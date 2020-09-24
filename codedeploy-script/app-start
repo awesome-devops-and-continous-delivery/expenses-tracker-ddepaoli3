@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /home/ubuntu/expenses-tracker
+forever start -c index.js

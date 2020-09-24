@@ -1,0 +1,27 @@
+version: 0.0
+os: linux
+files:
+- source: /
+ destination: /home/ubuntu/expenses-tracker
+
+permissions:
+- object: /
+   pattern: "**"
+   owner: ubuntu
+   group: ubuntu
+
+hooks:
+ApplicationStop:
+   - location: codedeploy-script/app-stop
+     timeout: 10
+     runas: ubuntu
+
+AfterInstall:
+   - location: codedeploy-script/install-pkgs
+     timeout: 1200
+     runas: ubuntu
+
+ApplicationStart:
+   - location: codedeploy-script/app-start
+     timeout: 60
+     runas: ubuntu
