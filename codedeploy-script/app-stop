@@ -1,4 +1,3 @@
 #!/bin/bash
 
-sudo chown -R ubuntu:ubuntu /home/ubuntu/expenses-tracker
 sudo forever stopall
