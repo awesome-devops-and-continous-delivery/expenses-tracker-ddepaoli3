@@ -6,6 +6,7 @@ files:
 
 permissions:
   - object: /home/ubuntu/expenses-tracker
+    pattern: "**"
     owner: ubuntu
     group: ubuntu
 
